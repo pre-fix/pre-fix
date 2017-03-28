@@ -26,7 +26,7 @@ a {
 }
 
 a:visited {
-  color: #fff;
+  color: #000;
 }
 
 
@@ -92,8 +92,7 @@ Layout Styles
 
 /*-- Banner -- */
 .banner {
-  color: #fff;
-  background: #2a64f8;
+  color: #000;
   height:300px;
 }
 /*-- Instagram feed -- */
