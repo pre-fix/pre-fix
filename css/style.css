@@ -47,12 +47,12 @@ Layout Styles
 main {
   width: 90%;
   background-color: #f6f7ed;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 1em;
   display: grid;
   grid-template-columns: auto auto 505px;
-  grid-template-rows: 400px 50% 50%;
+  grid-template-rows: 400px 505px 400px;
 
  
 }
