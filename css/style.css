@@ -47,8 +47,14 @@ Layout Styles
 main {
   width: 90%;
   background-color: #f6f7ed;
+  height: 100%;
   margin: 0 auto;
   padding: 1em;
+  display: grid;
+  grid-template-columns: auto auto 505px;
+  grid-template-rows: 400px 50% 50%;
+
+ 
 }
 /*-- Header -- */
   header {
@@ -64,6 +70,14 @@ main {
   letter-spacing: .2rem;
 }
 
+/*-- Banner -- */
+.banner {
+
+}
+/*-- Instagram feed -- */
+.insta {
+  -ms-flex-order: 2;
+}
 
 /*-- Footer -- */
 
@@ -110,15 +124,6 @@ footer {
 }
 
 
-/*-- Banner -- */
-.banner {
-  height:300px;
-}
-/*-- Instagram feed -- */
-.insta {
-  -ms-flex-order: 2;
-}
-
 /* =================================
 Spacing
 ==================================== */
@@ -160,7 +165,22 @@ Grid Properties
     text-align: center;
     width: 100%;
 }
-
+.grid-1 {
+  background-color:red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid-2 {
+  background-color:orange;
+  grid-column-end: 3;
+}
+.grid-3 {
+  background-color:yellow;
+}
+.grid-4 {
+  background-color:green;
+  grid-column-start: 2;
+}
 
 /* =================================
 Media Queries
@@ -177,9 +197,7 @@ Media Queries
 @media (min-width: 769px) {
   /*-- Header -- */
 
-  .banner {
-    height: 445px;
-  }
+
 
   .footer-brand-left {
     display: flex;
