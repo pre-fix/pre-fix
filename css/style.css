@@ -51,8 +51,12 @@ main {
   margin: 2em auto;
   padding: 1em;
   display: grid;
-  grid-template-columns: 1fr repeat(7, 1fr);
-  grid-template-rows: 1fr repeat(7, 1fr);
+  grid-template-areas: 
+          "header header header header"
+          "l c c r"
+          "l c c c";
+  grid-template-columns: [begin] repeat(4, 1fr);
+  grid-template-rows: [content] repeat(4, 1fr);
 }
 /*-- Header -- */
   header {
@@ -70,7 +74,7 @@ main {
 
 /*-- Banner -- */
 .banner {
-
+  
 }
 /*-- Instagram feed -- */
 .insta {
@@ -165,6 +169,7 @@ Grid Properties
 }
 .grid-1 {
   background-color:red;
+  grid-area: "header header header header";
 }
 .grid-2 {
   background-color:orange;
