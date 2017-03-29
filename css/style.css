@@ -48,13 +48,11 @@ main {
   width: 90%;
   background-color: #f6f7ed;
   height: auto;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 1em;
   display: grid;
-  grid-template-columns: auto auto 505px;
-  grid-template-rows: 400px 505px 400px;
-
- 
+  grid-template-columns: 1fr repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(7, 1fr);
 }
 /*-- Header -- */
   header {
@@ -167,19 +165,15 @@ Grid Properties
 }
 .grid-1 {
   background-color:red;
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 .grid-2 {
   background-color:orange;
-  grid-column-end: 3;
 }
 .grid-3 {
   background-color:yellow;
 }
 .grid-4 {
   background-color:green;
-  grid-column-start: 2;
 }
 
 /* =================================
